@@ -1,0 +1,57 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'student_navbar.html' %}
+    {% load static %}
+    <body>
+      <table align="left">
+    <tr>
+        <th>
+            <img src="{% static 'images/student-home.png' %}"  height="280" width="350" style="background-color:lightblue;margin-left: 20px">
+        </th>
+        <th>
+            <img src="{% static 'images/student.jpeg' %}"  height="280" width="350" style="background-color:lightblue;margin-left: 20px">
+        </th>
+    </tr>
+           </table>
+        <table align="center" border="3" style="background-color: yellow;color: red">
+        <tr>
+
+        <th style="color: navy;background-color: chartreuse;border-radius: 20px;text-align: center;font-size: 30px;width: 300px;font-family: 'Harlow Solid Italic'">
+            Available Courses
+
+        </th>
+        </tr>
+    <tr>
+
+            <th style="text-align: center;font-family: Century;font-size: 20px">* Python</th>
+    </tr>
+    <tr>
+
+        <th style="text-align: center;font-family: Century;font-size: 20px">* Django</th>
+    </tr>
+            <tr>
+
+        <th style="text-align: center;font-family: Century;font-size: 20px">* Flask</th>
+    </tr>
+    <tr>
+
+        <th style="text-align: center;font-family: Century;font-size: 20px">* Rest API</th>
+    </tr>
+    <tr>
+
+        <th style="text-align: center;font-family: Century;font-size: 20px">* Java</th>
+    </tr>
+
+      <tr>
+        <th style="text-align: center;font-family: Century;font-size: 20px">* Angular</th>
+    </tr>
+
+    <tr>
+        <th style="text-align: center;font-family: Century;font-size: 20px">* AWS</th>
+    </tr>
+        </table>
+    </body>
+
+
+
+{% endblock %}

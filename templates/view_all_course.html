@@ -1,0 +1,49 @@
+{% extends 'common.html' %}
+{% block common %}
+
+    {% include 'admin_nav.html' %}
+    {% load static %}
+    <br>
+ <table align="center" border="1" style="width: 700px">
+<tr>
+    <th colspan="9" style="text-align: center;color:navy;font-size: 30px;background-color:chartreuse;border-radius: 20px; font-family: 'Agency FB">All Scheduled Courses</th>
+</tr>
+<tr style="background-color: lightcoral;color: navy;font-family: Calibri;font-size: 22px">
+    <td width="50">Id</td>
+    <td>Name</td>
+    <td>Faculty</td>
+    <td>Date</td>
+    <td>Time</td>
+    <td>Fee</td>
+    <td>Duration</td>
+    <td>Update</td>
+    <td>Delete</td>
+</tr>
+ {% for x in data %}
+ <tr style="font-family: 'Rage Italic'">
+ <th>{{ x.cid }}</th>
+ <th>{{ x.name }}</th>
+ <th>{{ x.faculty }}</th>
+ <th>{{ x.date }}</th>
+ <th>{{ x.time }}</th>
+ <th>{{ x.fee }}</th>
+ <th>{{ x.duration }}</th>
+ <th>
+     <a href="{% url 'update_course' %}?cid={{ x.cid }}">Update</a>
+ </th>
+  <th>
+      <a href="{% url 'delete_course' %}?cid={{ x.cid }}">
+          <img src="{% static 'images/trash.png' %}" width='30' height='30'>
+      </a>
+     </th>
+ </tr>
+ {% endfor %}
+
+
+</table>
+    <br>
+     {% for msg in messages %}
+    <h3 style="text-align: center;font-family: Arial;color: chartreuse">{{ msg }}</h3>
+    {% endfor %}
+
+{% endblock %}

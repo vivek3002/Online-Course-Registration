@@ -1,0 +1,65 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'student_navbar.html' %}
+    {% load static %}
+    <body>
+    <form method="post" action="{% url 'student_register' %}">
+            {% csrf_token %}
+     <table>
+
+    <tr>
+    <tr>
+
+        <th rowspan="7"><br>
+            <img src="{% static 'images/student_register.png' %}" width="300" style="margin-left: 200px">
+        </th>
+          <tr>
+         <br>
+        <th colspan="4" style="background-color: red;font-family: 'Calibri Light';  color: greenyellow;text-align: center;font-size: 20px;border-radius: 10px">
+            Student Registration Details
+        </th>
+       </tr>
+
+         <th>Name:</th>
+        <th  id="sample">
+             {{ data.name }}
+        </th>
+        <th>{{ data.name.errors }}</th>
+    </tr>
+     <tr>
+        <th>Contact No:</th>
+        <th>
+        {{ data.contact }}
+        </th>
+        <th>{{ data.contact.errors }}</th>
+    </tr>
+     <tr>
+        <th>Email Id:</th>
+        <th>
+           {{ data.email }}
+        </th>
+        <th>{{ data.email.errors }}</th>
+
+    </tr>
+     <tr>
+        <th>Password:</th>
+        <th>
+          {{ data.password }}
+        </th>
+        <th>{{ data.password.errors }}</th>
+
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center">
+            <button type="submit" class="btn btn-danger">Register</button>
+        </th>
+    </tr>
+    </table>
+          </tr>
+        </form>
+    </body>
+      {% for msg in messages %}
+    <h3 style="text-align: center;font-family: Arial;color: darkorange">{{ msg }}</h3>
+    {% endfor %}
+
+{% endblock %}

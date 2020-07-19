@@ -1,0 +1,40 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'student_navbar.html' %}
+    {% load static %}
+     <body style="background-image: revert">
+
+     </body>
+    <table>
+    <tr>
+        <th><br>
+            <img src="{% static 'images/sathya.jpeg' %}" width="700" height="80" style="margin-left: 180px;border-radius: 35px">
+        </th>
+    </tr>
+
+        <th colspan="3"><br><br>
+
+             <h5 style="background: greenyellow;color: red;width: 150px;border-radius: 30px;text-align: center;margin-left: 100px;padding: 5px">
+                 Contact Details</h5>
+
+    <p style="margin-left: 100px;font-family: 'Harlow Solid Italic'" >
+          Our Location:<br>
+          Sathya Technologies
+          The Best Software Training Institute in Ameerpet , Hyderabad<br>
+           2nd Floor, Sri Sai Arcade,
+          Beside Aditya Trade Centre, Ameerpet,<br>
+         Hyderabad- Telengana State, PIN-500038,INDIA<br>
+      IND:
+        +91 9100920092,+91 9100940094<br>
+        Email:info@sathyatechnologies.com<br>
+        Business Hours:<br>
+        Monday – Saturday: 7am to 9pm IST<br>
+        Sunday – Closed
+    </p>
+
+        </th>
+    </tr>
+    </table>
+<br>
+{% endblock %}
+

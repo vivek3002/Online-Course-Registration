@@ -1,0 +1,25 @@
+{% extends 'common.html' %}
+{% block common %}
+ {% include 'admin_nav.html' %}
+    {% load static %}
+     <th width="500"><br>
+         <marquee style="background-color: lime;color: navy;font-size: 30px;border-radius: 10px;width: 700px;margin-left: 200px;font-family: 'Eras Bold ITC'">
+             Sathya Technologies Welcomes You Admin
+         </marquee>
+     </th>
+    <br><br>
+    <table align="center">
+    <tr>
+        <th>
+            <img src="{% static 'images/admin3.jpeg' %}" width="200" height="150">
+        </th>
+        <th>
+            <img src="{% static 'images/admin.jpeg' %}" width="400" height="150">
+        </th>
+        <th></th>
+
+    </tr>
+
+    </table>
+
+{% endblock %}

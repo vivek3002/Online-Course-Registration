@@ -1,0 +1,20 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% load static %}
+
+{% include 'login-student_navbar.html' %}
+
+    <table align="center">
+    <tr><br>
+        <th style="color: mediumvioletred;font-size: 25px;font-family: 'Agency FB'">Sathya Technologies Welcomes You</th>
+    </tr>
+    <tr>
+        <th style="text-align: center;color: mediumvioletred;font-size: 25px;font-family: 'Agency FB'">Mr/Mrs:{{ data.name }}</th>
+
+        <tr>
+        <th style="text-align: center">
+            <img src="{% static 'images/vivek2.jpg' %}" width="200" height="250">
+        </th>
+    </tr>
+    </table>
+{% endblock %}

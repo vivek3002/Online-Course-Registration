@@ -1,0 +1,72 @@
+{% extends 'common.html' %}
+{% block common %}
+
+{% include 'admin_nav.html' %}
+    {% load static %}
+<style>
+
+#title-a{
+    text-align: center;
+    background-color: lime;
+    color: navy;
+    font-family: "Agency FB";
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 350px;
+
+}
+</style>
+     <form method="post" action="{% url 'add_course' %}">
+    {% csrf_token %}
+
+         <br>
+
+          <table align="center">
+              <tr>
+                  <th colspan="4" id="title-a">Schedule a New Course</th>
+              </tr>
+
+              <tr style="text-align: center">
+                  <td><br>{{ data.name.label }}</td>
+                  <td>{{ data.name }}</td>
+                  <td>{{ data.name.errors }}</td>
+              </tr>
+               <tr  style="text-align: center">
+                  <td>{{ data.faculty.label }}</td>
+                  <td>{{ data.faculty }}</td>
+                  <td>{{ data.faculty.errors }}</td>
+              </tr>
+               <tr  style="text-align: center">
+                  <td>{{ data.date.label }}</td>
+                  <td>{{ data.date }}</td>
+                  <td>{{ data.date.errors }}</td>
+              </tr>
+               <tr  style="text-align: center">
+                  <td>{{ data.time.label }}</td>
+                  <td>{{ data.time }}</td>
+                  <td>{{ data.time.errors }}</td>
+              </tr>
+               <tr  style="text-align: center">
+                  <td>{{ data.fee.label }}</td>
+                  <td>{{ data.fee }}</td>
+                  <td>{{ data.fee.errors }}</td>
+              </tr>
+               <tr  style="text-align: center">
+                  <td>{{ data.duration.label }}</td>
+                  <td>{{ data.duration }}</td>
+                  <td>{{ data.duration.errors }}</td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center" colspan="4"> <br>
+                      <button type="submit" class="btn btn-danger">Register</button>
+                  </td>
+              </tr>
+          </table>
+</form>
+    {% for msg in messages %}
+    <h3 style="text-align: center;font-family: Arial;color: chartreuse"><br>{{ msg }}</h3>
+    {% endfor %}
+ <br>
+{% endblock %}

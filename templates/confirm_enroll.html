@@ -1,0 +1,32 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'login-student_navbar.html' %}
+    {% load static %}
+    <table align="center">
+    <tr><br>
+    <th colspan="2" style="background-color: navy;color: lime;font-size: 25px;border-radius: 20px;width: 450px;text-align: center">
+        Enrollment Confirmation
+    </th>
+    </tr>
+    <tr>
+    <th rowspan="6"><br>
+        <img src="{% static 'images/enroll.jpeg'%}" width="250" height="150" style="margin-left: 20px">
+    </th>
+        <tr>
+    <tr>
+        <th>Enroll Id:</th>
+    </tr>
+    <tr>
+        <th>Course Id:</th>
+    </tr>
+     <tr>
+        <th>Contact No:</th>
+    </tr>
+    <tr>
+        <th>
+            <button type="submit">Enroll</button>
+        </th>
+    </tr>
+
+    </table>
+{% endblock %}

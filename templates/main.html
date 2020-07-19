@@ -1,0 +1,36 @@
+{% extends 'common.html' %}
+{% block common %}
+ {% load static %}
+    <h1>
+      <th>
+    <marquee style="font-family: Algerian;text-align: center;font-size: 30px;color: olive;background-color: lime;border-radius: 30px">
+        Welcome To Sathya Technologies | Welcome To Sathya Technologies | Welcome To Sathya Technologies</marquee>
+    </th>
+    </h1>
+
+    <body>
+    <table align="center">
+
+
+    <tr>
+        <th colspan="2">
+            <img src="{% static 'images/menuimage.jpg' %}" width="500">
+        </th>
+    </tr>
+
+         <tr style="text-align: center;background-color: greenyellow;font-size: 30px">
+        <th style="border-radius: 20px;font-family: 'Harlow Solid Italic'">
+            <a href="{% url 'admin_page' %}">Admin</a>
+        </th>
+        <th style="border-radius: 20px;font-family: 'Harlow Solid Italic'">
+            <a href="{% url 'student_page' %}">Student</a>
+        </th>
+    </tr>
+
+
+        </table>
+    </body>
+
+{% endblock %}
+
+
