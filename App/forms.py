@@ -4,7 +4,7 @@ from django.forms import SelectDateWidget
 from App.models import CourseModel,StudentModel
 
 class CourseForm(forms.ModelForm):
-    date=forms.DateField(widget=forms.DateField)
+    date=forms.DateField(widget=forms.DateInput)
     time=forms.TimeField(widget=forms.TimeInput)
     class Meta:
         model=CourseModel

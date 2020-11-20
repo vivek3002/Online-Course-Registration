@@ -104,7 +104,21 @@ def ConfirmEnroll(request):
     cm=CourseModel.objects.filter(cid=no)
     en=EnrollModel()
     return render(request,'confirm_enroll.html',{'edata':en,'cdata':cm})
+
+
+def enrollment_confirmed(request):
+    i=request.POST.get('cid')
+    c=request.POST.get('cno')
+    EnrollModel(cid=i,contact=c).save()
+    messages.success(request,'Enrollment Confirmed')
+    return redirect('confirm_enroll')
+
+
+def view_enrolled_course(request):
+    em=EnrollModel.objects.all()
+    return render(request,"view_enrolled_course.html",{'edata':em})
+
+
+
 def contact_us(request):
     return render(request,'contact_us.html')
-
-

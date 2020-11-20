@@ -1,0 +1,35 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'login-student_navbar.html' %}
+    {% load static %}
+
+     <table align="center" border="1" style="width: 700px">
+<tr>
+    <th colspan="9" style="text-align: center;color:navy;font-size: 30px;background-color:chartreuse;border-radius: 20px; font-family: 'Agency FB">
+        View All Enrolled Courses</th>
+</tr>
+<tr style="background-color: lightpink;color: navy;font-family: Calibri;font-size: 22px;text-align: center">
+    <td width="90"> Course Id</td>
+    <td>Name</td>
+    <td>Faculty</td>
+    <td>Date</td>
+    <td>Time</td>
+    <td>Fee</td>
+    <td>Duration</td>
+    <td style="color: red">Cancel</td>
+</tr>
+      {% for x in data %}
+ <tr style="font-family: 'Rage Italic';text-align: center">
+ <th>{{ x.cid }}</th>
+ <th>{{ x.name }}</th>
+ <th>{{ x.faculty }}</th>
+ <th>{{ x.date }}</th>
+ <th>{{ x.time }}</th>
+ <th>{{ x.fee }}</th>
+ <th>{{ x.duration }}</th>
+          <th>
+          <img src="{% static 'images/cancel.png' %}" width="20" height="20">
+          </th>
+     {% endfor %}
+     </table>
+{% endblock %}

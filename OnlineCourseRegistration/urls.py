@@ -39,8 +39,9 @@ urlpatterns = [
     path('student_login/',views.student_login,name='student_login'),
     path('student_home/',views.student_welcome,name='student_home'),
     path('enroll_course/',views.enroll_course,name='enroll_course'),
-
     path('confirm_enroll/',views.ConfirmEnroll,name='confirm_enroll'),
+    path('enrollment_confirmed/',views.enrollment_confirmed,name='enrollment_confirmed'),
+    path('view_enrolled_course/',views.view_enrolled_course,name='view_enrolled_course'),
 
     path('contact_us/',views.contact_us,name='contact_us'),
 

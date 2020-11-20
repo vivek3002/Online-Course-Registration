@@ -20,4 +20,4 @@ class StudentModel(models.Model):
 class EnrollModel(models.Model):
     eid=models.AutoField(primary_key=True)
     cid=models.IntegerField()
-    contact=models.IntegerField()
+    contact=models.IntegerField(unique=True)
