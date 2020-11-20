@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a868a2-05b8-49a2-ab63-98351b369ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/static/images/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/view_enrolled_course.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineCourseRegistration/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineCourseRegistration/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/confirm_enroll.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/confirm_enroll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enroll_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enroll_course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login-student_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login-student_navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/view_all_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/view_all_course.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +126,7 @@
     <session id="-463650594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -149,11 +138,13 @@
         <counts>
           <entry key="html" value="322" />
           <entry key="py" value="228" />
+          <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="322" />
+          <entry key="PLAIN_TEXT" value="56" />
           <entry key="Python" value="228" />
         </counts>
       </usages-collector>
@@ -187,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/view_all_course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="31" column="67" lean-forward="true" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+            <state relative-caret-position="77">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="e#359#444#0#HTML" expanded="true" />
               </folding>
@@ -247,11 +238,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/view_enrolled_course.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+            <state relative-caret-position="202">
+              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -454,6 +445,14 @@
       <workItem from="1594527488430" duration="16648000" />
       <workItem from="1594553040166" duration="6620000" />
     </task>
+    <task id="LOCAL-00001" summary="In this commit Student Enrollment done">
+      <created>1605897963473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605897963474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,6 +512,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In this commit Student Enrollment done" />
+    <option name="LAST_COMMIT_MESSAGE" value="In this commit Student Enrollment done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594390419471">
@@ -800,16 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/view_all_course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="31" column="67" lean-forward="true" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
-          <folding>
-            <element signature="e#359#444#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/confirm_enroll.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -833,8 +826,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/view_enrolled_course.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+        <state relative-caret-position="202">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/view_all_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#359#444#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
